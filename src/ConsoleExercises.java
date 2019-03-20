@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class ConsoleExercises {
 
     public static void main(String[] args){
+
         double pi = 3.14159;
         int answer, answerA, answer2, L, W;
         String word1, word2, word3;
@@ -12,12 +11,12 @@ public class ConsoleExercises {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.format("the value of pie is " + pi);
+        System.out.format("the value of pie is %s", pi);
         
         System.out.println("\n enter a number \n");
         answer = scanner.nextInt();
 
-        System.out.println("the number you enter is: " + answer + "\n");
+        System.out.format("the number you enter is: %s\n", answer );
 
         System.out.println("now enter three words \n");
 
@@ -26,12 +25,13 @@ public class ConsoleExercises {
         word3 = scanner.next();
 
         System.out.println("your words are: \n" + word1 + "\n" + word2 + "\n" + word3 + "\n");
+        System.out.format("your words are:\n %s\n %s\n %s\n", word1, word2, word3);
 
-        System.out.println("now enter a sentence");
+        System.out.println("\nnow enter a sentence");
 
         sentence = scanner.nextLine();
 
-        System.out.println("your input is: " + sentence + "\n");
+        System.out.format("your input is: %s \n", sentence);
 
         System.out.println("enter width and length \n");
 
