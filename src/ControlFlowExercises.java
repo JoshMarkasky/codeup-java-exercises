@@ -32,20 +32,20 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 //
-//        //FizzBuzz
-//        for(i = 0; i <= 100; i++){
-//            if(i%3 == 0 && i != 0){
-//                if(i%5 == 0){
-//                    System.out.println("FizzBuzz");
-//                } else {
-//                    System.out.println("Fizz");
-//                }
-//            } else if(i%5 == 0 && i != 0){
-//                System.out.println("Buzz");
-//            } else {
-//                System.out.println(i);
-//            }
-//        }
+        //FizzBuzz
+        for(i = 0; i <= 100; i++){
+            if(i%3 == 0 && i != 0){
+                if(i%5 == 0){
+                    System.out.println("FizzBuzz");
+                } else {
+                    System.out.println("Fizz");
+                }
+            } else if(i%5 == 0 && i != 0){
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
 
 
         // showing table
