@@ -6,26 +6,20 @@ public class Input {
     private Scanner keyboard = new Scanner(System.in);
 
     public String getString(String input){
-        input = keyboard.next();
-        return input;
+        System.out.println("you entered: " + input);
+        return "you entered: " +  input;
     }
 
     public boolean yesNo(String input){
-        boolean keepGoing = true;
+        if (input.charAt(0) == 'n' || input.charAt(0) == 'N') {
+            return false;
+        } else if (input.charAt(0) == 'y' || input.charAt(0) == 'Y') {
+            return true;
+        } else {
+            System.out.println("not a valid answer, please re-think your existence");
+            return true;
+        }
 
-        System.out.println("do you want to continue?");
-        input = keyboard.next();
-
-        do {
-            if (input.charAt(0) == 'n' || input.charAt(0) == 'N') {
-                keepGoing = false;
-            } else if(input.charAt(0) == 'y' || input.charAt(0) == 'Y'){
-                keepGoing = true;
-            }else {
-                System.out.println("not a valid answer, please re-think your existence");
-            }
-        }while(keepGoing);
-        return keepGoing;
     }
 
     public int getInt(int min, int max){
